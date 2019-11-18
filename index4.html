@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    
+    <title>Automobility LA 2019 | ReRoute</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">ReRoute</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="mr-3 ml-auto">
+                    <div id="balance" class="text-white"></div>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-outline-success my-2 my-sm-0" role="button" href="/">
+                    Gain
+                </a>
+                <a class="btn btn-success my-2 my-sm-0" role="button">
+                    Spend
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <main role="main" class="container"></main>
+    
+    <div class="container">
+        <div class="row" style="padding-top:150px">
+            <div class="col-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <label for="inputAddress2">Destination</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="e.g. Marina Del Rey">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Levels</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Level 1</option>
+                            <option>Level 2</option>
+                            <option>Level 3</option>
+                        </select>
+                    </div>
+                    <button id="button_submit_active" type="button" class="btn btn-primary btn-block">Find Stations</button>
+                    <button id="button_submit_inactive" class="btn btn-primary btn-block" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Finding Stations...
+                    </button>
+                    <button id="button_reset" type="reset" class="btn btn-danger btn-block">Reset</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+</main><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/balance")
+        xhr.send()
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                document.getElementById("balance").innerHTML = "Balance: " + xhr.responseText + " Carbon Tokens";
+            }
+        }
+        $(function() {
+            $("#button_submit_inactive").hide()
+            var availableSources = [
+            "LA Convention Center", "La Cienega Boulevard"
+            ];
+            var availableDestinations = [
+            "UCLA", "University of Southern California"
+            ]
+            
+            $("#inputAddress").autocomplete({
+                source: availableSources
+            });
+            $("#inputAddress2").autocomplete({
+                source: availableDestinations
+            });
+            
+            $("#button_submit_active").click(function() {
+                if ($("#inputAddress").val() !== "" && $("#inputAddress2").val() !== "") {
+                    $("#button_submit_active").hide()
+                    $("#button_reset").attr("disabled", true)
+                    $("#button_submit_inactive").show()
+                    setTimeout(() => {
+                        $(location).attr('href', '/stations')
+                    }, 3000);
+                }
+            })
+            
+        });
+    </script>
+</body>
+</html>

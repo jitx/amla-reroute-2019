@@ -1,0 +1,5 @@
+module.exports = {
+  HTTP_SERVER : 'https://ropsten.infura.io/v3/6ddeed5d616b4430943cd2ef4df27d73',
+  DEFAULT_ACCOUNT : '0xfEd560f69d77782cF9218D7ADaf594b33E89095C',
+  CONTRACT_ADDRESS : '0xC46138634D359a765baEC939cf39ffdbd6DaF6ab'
+}

@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    
+    <title>Automobility LA 2019 | Select Route</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">ReRoute</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="btn-group ml-auto">
+                <a class="btn btn-success my-2 my-sm-0" role="button" href="/">
+                    Gain
+                </a>
+                <a class="btn btn-outline-success my-2 my-sm-0" role="button" href="/spend">
+                    Spend
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <main role="main" class="container"></main>
+    
+    <div class="container-fluid">
+        <div class="row" style="padding-top:150px">
+            <div class="col-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+                    <table class="table table-hover table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Route</th>
+                                    <th scope="col">Carbon Coins</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a role="button" class="btn btn-block btn-outline-primary" href="/route1">Route 1</a></td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td><a role="button" class="btn btn-block btn-outline-primary" href="about:blank">Route 2</a></td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td><a role="button" class="btn btn-block btn-outline-primary" href="/route3">Route 3</a></td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+            
+        </div>
+    </div>
+    
+</main><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script>
+        $(function() {
+            $("#button_submit_inactive").hide()
+            var availableDestinations = [
+            "LA Convention Center", "La Cienega Boulevard"
+            ];
+            var availableSources = [
+            "UCLA", "University of Southern California"
+            ]
+            
+            $("#inputAddress").autocomplete({
+                source: availableSources
+            });
+            $("#inputAddress2").autocomplete({
+                source: availableDestinations
+            });
+
+            $("#button_submit_active").click(function() {
+                $("#button_submit_active").hide()
+                $("#button_reset").attr("disabled", true)
+                $("#button_submit_inactive").show()
+                setTimeout(() => {
+                    $(location).attr('href', 'http://google.com')
+                }, 3000);
+            })
+
+        });
+    </script>
+</body>
+</html>
