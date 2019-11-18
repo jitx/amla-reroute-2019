@@ -2,7 +2,7 @@
 
 ReRoute is an incentive-based eco-friendly routing framework developed at AutoMobilityLA Hackathon.
 
-![ReRoute_Architecture Illustration](Architecture.png)
+![ReRoute_Architecture Illustration](Architecture.PNG)
 
 ## Motivation
 Air pollution is on the rise all over the world. The transportation industry is one of the sources of air pollution. Studies indicate that patients with asthma are increasingly visiting hospitals and emergency rooms. One study reports that the insurance companies spend 80 Billion USD between 2008 to 2013 to treat asthma-related problems. Besides, government agencies are also increasing the investment to tackle issues related to climate change.
