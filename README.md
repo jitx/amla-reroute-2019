@@ -2,7 +2,7 @@
 
 ReRoute is an incentive-based eco-friendly routing framework developed at AutoMobilityLA Hackathon.
 
-![ReRoute_Architecture Illustration](/documents/Motive-architecture-full.png)
+![ReRoute_Architecture Illustration](/documents/ReRoute-architecture-full.png)
 
 ## Motivation
 Air pollution is on the rise all over the world. The transportation industry is one of the sources of air pollution. Studies indicate that patients with asthma are increasingly visiting hospitals and emergency rooms. One study reports that the insurance companies spend 80 Billion USD between 2008 to 2013 to treat asthma-related problems. Besides, government agencies are also increasing the investment to tackle issues related to climate change.
@@ -14,8 +14,8 @@ ReRoute presents an incentive-driven eco-friendly routing framework to encourage
 Drivers can use the carbon tokens to buy fuel including electric charge or use the tokens to reduce the insurance premium or carbon tax. We have developed the framework using Here's routing API, AWS EC2 instance, Ethereum Blockchain and Smart Contracts.
 
 ## Team Members
-Xiang Ji, USC (xiangji@usc.edu)
-Pavas Navaney, USC (navaney@usc.edu)
-Soufia Maherzi, UCLA (smaherzi@yahoo.fr)
-Gowri Ramachandran, USC (gsramach@usc.edu)
+* Xiang Ji, USC (xiangji@usc.edu)
+* Pavas Navaney, USC (navaney@usc.edu)
+* Soufia Maherzi, UCLA (smaherzi@yahoo.fr)
+* Gowri Ramachandran, USC (gsramach@usc.edu)
 
