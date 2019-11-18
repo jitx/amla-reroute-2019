@@ -1,11 +1,8 @@
-# amla-reroute-2019
-Automobility LA Hackathon 2019 - Project ReRoute
+# ReRoute: Routing Reimagined
 
-# MOTIVE: Micropayments fOr Trusted vehIcular serVicEs
+ReRoute is an incentive-based eco-friendly routing framework developed at AutoMobilityLA Hackathon.
 
-MOTIVE is a framework that can be used to build applications that allow vehicles to exchange payment for data and compute services. It has been developed at the USC Viterbi Center for Cyber-Physical Systems and Internet of Things (CCI) & Autonomous Networks Research Group (ANRG).
-
-![MOTIVE Architecture illustration](/documents/Motive-architecture-full.png)
+![ReRoute_Architecture Illustration](/documents/Motive-architecture-full.png)
 
 ## Motivation
 Air pollution is on the rise all over the world. The transportation industry is one of the sources of air pollution. Studies indicate that patients with asthma are increasingly visiting hospitals and emergency rooms. One study reports that the insurance companies spend 80 Billion USD between 2008 to 2013 to treat asthma-related problems. Besides, government agencies are also increasing the investment to tackle issues related to climate change.
