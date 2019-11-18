@@ -13,6 +13,13 @@ ReRoute presents an incentive-driven eco-friendly routing framework to encourage
 
 Drivers can use the carbon tokens to buy fuel including electric charge or use the tokens to reduce the insurance premium or carbon tax. We have developed the framework using Here's routing API, AWS EC2 instance, Ethereum Blockchain and Smart Contracts.
 
+
+## Ethereum Transactions
+ ### Routing Application
+ https://ropsten.etherscan.io/address/0xfed560f69d77782cf9218d7adaf594b33e89095c
+ ### Marketplace
+ https://ropsten.etherscan.io/address/0x1b87cd9c9c12a931958c114c9b6c257263e8a04e
+ 
 ## Team Members
 * Xiang Ji, USC (xiangji@usc.edu)
 * Pavas Navaney, USC (navaney@usc.edu)
